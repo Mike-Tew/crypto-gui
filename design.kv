@@ -1,15 +1,12 @@
 #:kivy 1.0
 <AppLayout>
+
   BoxLayout:
     orientation: "vertical"
     size: root.width, root.height
 
     Label:
-      text: "Cryptos"
-      font_size: 40
+      text: root.formatted_bitcoin
 
     Label:
-      id: bitcoin_label
-      text: "Bitcoin"
-
-
+      text: root.formatted_etherium
